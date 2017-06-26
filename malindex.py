@@ -223,7 +223,7 @@ def show_results(cur):
 
         if cmd == "q":
           break
-    print "Total of %d row(s)" % total
+    print("Total of %s" % (total == 1 and "1 row." or "%d rows." % total))
   finally:
     cur.close()
 
